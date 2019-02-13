@@ -190,9 +190,10 @@ function parseBlock(height, serializedBlock){
         time: parts[1],
         difficulty: parseInt(parts[2]),
         shares: parseInt(parts[3]),
-        orphaned: parts[4],
+        orphaned: parts[4].toString(),
         reward: parts[5]
     };
+	if(!block.reward) block.orphaned='2';
 
     var toGo = lastStats.config.depth - (lastStats.network.height - block.height) + 1;
     if(toGo > 1){
@@ -204,7 +205,9 @@ function parseBlock(height, serializedBlock){
     else if(toGo <= 0){
         block.maturity = "<i class='fa fa-unlock-alt'></i>";
     }
-        
+       
+	console.log(serializedBlock);
+	console.log(block.orphaned);
     switch (block.orphaned){
         case '0':
             block.status = 'unlocked';
