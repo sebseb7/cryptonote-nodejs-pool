@@ -29,7 +29,7 @@
         "clusterForks": 1,
         "poolAddress": "fh3rKxFzt6metRpCYCmjTKZmhD2zZnNv98bq4C2Zkv6cUMMWmVqZ6YWSs2bW6TYmAiQpnS8DdEYrrXcriYvJSqkm1vayDEXGL",
         "intAddressPrefix": 13671,
-        "blockRefreshInterval": 1000,
+        "blockRefreshInterval": 200,
         "minerTimeout": 900,
         "sslCert": "./cert.pem",
         "sslKey": "./privkey.pem",
