@@ -1,5 +1,5 @@
 {
-    "poolHost": "http://192.168.178.210/",
+    "poolHost": "192.168.178.210",
 
     "coin": "TUBE4stagenet",
     "symbol": "TUBE4st",

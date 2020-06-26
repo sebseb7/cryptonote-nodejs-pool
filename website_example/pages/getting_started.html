@@ -72,10 +72,10 @@
             <tbody id="miningApps_rows">
 	    
             <tr class="appInfo">
-                <td class="miningAppTitle">SwapReferenceMiner</td>
+                <td class="miningAppTitle">Tube4ReferenceMiner</td>
                 <td>6GB+ GPU (AMD/NVIDIA)</td>
                 <td>Easy to use CPU + GPU Mining App</td>
-                <td><a class="btn btn-success" target="_blank" href="https://github.com/swap-dev/SwapReferenceMiner/releases/latest"><span tkey="download">Download</span></a></td>
+                <td><a class="btn btn-success" target="_blank" href="https://github.com/tubedev2000/tube4referenceMiner/releases"><span tkey="download">Download</span></a></td>
             </tr>
 	    
             </tbody>
@@ -125,7 +125,7 @@ currentPage = {
         if (!lastStats.config.fixedDiffEnabled) $('#fixedDiff').hide();
 
         var coin = lastStats.config.coin.toLowerCase() || null;
-        var cnAlgorithm = lastStats.config.cnAlgorithm || "cryptonight";
+        var cnAlgorithm = lastStats.config.cnAlgorithm || "Cuckaroo29B";
         var cnVariant = lastStats.config.cnVariant || 0;
 
         algorithm = '';
@@ -146,6 +146,10 @@ currentPage = {
         else if (cnAlgorithm == "cryptonight_superfast") {
 			algorithm = 'Crytonight Superfast (Swap)';
 			xmrstakAlgo = 'superfast';
+        }
+        else if (cnAlgorithm == "cuckaroo29b") {
+			algorithm = 'Cuckaroo29B';
+			xmrstakAlgo = '';
         }
         else if (cnAlgorithm == "cuckaroo29s") {
 			algorithm = 'Cuckaroo29S (Swap)';
